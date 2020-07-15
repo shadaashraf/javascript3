@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Simple JavaScript Image Thumbnail Viewer Tutorial | Lisenme.com</title>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link href="main.css" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Merienda One' rel='stylesheet'>
+</head>
+<body>
+    <div class="container">
+    <!--the start of Galary-->
+    <div class="row">
+        <h1>*****OUR GAMES*****</h1>
+    </div>    
+    <div class="row">
+        <img id="0" class="preview normal" src="" alt="preview" /><br />
+        <img id="1" class="thumb normal" src="img/blank-card-chat-colors-1111369.jpg" alt="image1" onmouseover="preview(this)"/>
+        <img id="2" class="thumb normal" src="img/white-paper-1111367.jpg" alt="image2" onmouseover="preview(this)"/>
+        <img id="3" class="thumb normal" src="img/white-quote-paper-cutout-1111370.jpg" alt="image3" onmouseover="preview(this)"/>
+    </div>
+    <!--the end of the Galary-->
+    <!--the start of Game-->
+        <h1>*****LETS PLAY*****</h1>
+    </div>     
+        <div class="score-counter">
+            <div id="player-data">
+                <input type="text" id="p1" placeholder="Enter player1" required><br>
+                <input type="text" id="p2" placeholder="Enter player2" required><br>
+                <button id="start" onclick="startGame()">start</button>      
+            </div>
+            <div id="score">    
+            <select id="maxscore">
+                <option value="">Set winning score</option>
+                <option value="10">10</option>
+                <option value="20">20</option>
+                <option value="30">30</option>
+            </select><br>
+            <p id="inc1">0</p>
+            <span id="to">:</span>
+            <p id="inc2">0</p><br>
+            <input type="button" id="Player1" onclick="player1()" value="player1"></button>
+            <input type="button" id="Player2" onclick="player2()" value="player2"></button>
+            <button id="reset" onclick="reset()">Reset</button>
+          </div>
+        </div>
+    <!--the end of Game-->
+     <!--the slideshow-->
+     <div class="container">
+     <h1>****the SlideShow****</h1>
+     <div id="slideshow-example" data-component="slideshow">
+        <div role="list">
+          <div class="slide">
+            <img src="img/pink-and-black-nintendo-ds-1462725.jpg" alt="1" width="720px">
+          </div>
+          <div class="slide">
+            <img src="img/board-center-chalk-chalkboard-220066.jpg" alt="img2" width="720px">
+          </div>
+          <div class="slide">
+            <img src="img/brown-puzzle-pieces-3852577.jpg" alt="img3" width="720px">
+          </div>
+        </div>
+      </div>
+      <h1>****Digital Clock****</h1>
+      <div id="clock"></div>
+    </div>
+      <!--the clock-->
+  
+      <script src="js/jquery.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="styles.js"></script>
+</body>
+</html>

@@ -1,0 +1,152 @@
+
+/* the_css_OFslideShow */   
+body {
+        font-family: 'Merienda One';font-size: 22px;
+        margin: 0px;
+        background-color:darkslategrey;
+    }
+
+.container{
+    margin-left: 25%;
+}
+.preview {
+    width:640px;
+    height:360px}
+     
+.thumb {
+    width:205px;
+    margin-right:3px;}
+     
+.normal {
+    border:3px solid #000000;}
+     
+.selected {
+    border:3px solid #ff0000;}
+h1{
+    margin-left:10%;
+    color: aqua;
+}   
+
+   /* **************** */ 
+   .score-counter
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#p1,#p2 , #start
+{
+
+    width: 200px;
+    padding: 15px;
+    background-color:#b91666;
+    color: white;
+    border:0px;
+    border-radius:3px;
+    outline:none;
+}
+#p1
+{
+    margin: 5%;
+}
+#p2
+{
+    margin: 5%;
+}
+#start 
+{
+    margin-left: 30%;
+    margin-top: 10%;
+    width: 100px;
+    border-radius: 40px;
+    background-color:#b91666;
+    color: white;
+    outline: black;
+    
+    
+}
+#score
+{
+    
+    display:none;
+}
+#maxscore
+{
+    margin-left: 20%;
+    padding: 15px;
+    color: white;
+    width: 200px;
+    border: 0;
+    background-color:#b91666;
+    text-align:center ;
+    outline:none;
+}
+#inc1,#inc2,#to
+{
+    font-size: 40px;
+    font-style:bold;
+    display: inline-block;
+    background-color:#b91666;
+    color: white;
+    padding: 40px;
+    border:0px;
+}
+#to
+{
+    background-color: transparent;
+    color: black;
+}
+#Player1 , #Player2 ,#Reset
+{
+    background-color:#b91666;
+    color: white;
+    width: 100px;
+    height: 35px;
+    border: 0px;
+    outline:none;
+}
+#Player1
+{
+margin-top: -10%;
+margin-left: -1%;
+}
+#Player2
+{
+margin-left: 35%;
+}
+#reset
+{  margin-left: 35%;
+    margin-top: 10%;
+    width: 100px;
+    height: 50px;
+    border-radius: 40px;
+    border-color:black;
+    background-color:#b91666;
+    color: white;
+    outline: black;
+    transition: all 0.6 ease-in-out;
+}
+
+[data-component="slideshow"] .slide {
+    display: none;
+  }
+
+  [data-component="slideshow"] .slide.active {
+    display: block;
+  }
+  /* the clock css*/
+  #clock {
+    font-family: 'Orbitron', sans-serif;
+    color:#b91666;
+    font-size: 56px;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color:aqua;
+    height: 15x;
+    width: 350px;
+    margin-left: 15%;
+    margin-bottom: 30px;
+  }
